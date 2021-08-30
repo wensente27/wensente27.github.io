@@ -337,8 +337,3 @@ body {
         font-size: 30px;
     }
 }
-
-.footer .navbar .navbar-container .site-type {
-    flex-grow: 2;
-    text-align: left;
-}
