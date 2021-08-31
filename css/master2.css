@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+@font-face {
+    font-family: Monument;
+    src: url(fonts/monumentextended-regular-webfont.woff);
+}
 
 * {
     margin: 0;
@@ -129,6 +132,7 @@ body {
 
 .hero-image .hero-image-container img {
     width: 100%;
+    animation: drop 1.5s ease;
 }
 
 @media(max-width: 900px) {
@@ -261,6 +265,14 @@ body {
 	transition-duration: 0.4s;
 }
 
+.exter__item-link:hover ~ .marquee .marquee__inner {
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+
+
 
 .menu__item-link,
 .marquee span {
@@ -293,15 +305,6 @@ body {
 
 .server .server-container a {
     text-decoration: none;
-    background-image: linear-gradient(to right, white, teal);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 0% 5px;
-    transition: 1s;
-}
-
-.server .server-container a:hover {
-    background-size: 100% 5px;
 }
 
 @media(max-width: 900px) {
@@ -335,5 +338,47 @@ body {
 @media(max-width: 900px) {
     .socials .socials-container {
         font-size: 30px;
+    }
+}
+
+.exter__item {
+    margin-left: 7vw;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	-webkit-text-stroke: 1.5px #ffff;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	transition: opacity 0.4s;
+    text-decoration: none;
+}
+
+.exter__item-link::before {
+	all: initial;
+	font-family: sans-serif;
+	counter-increment: menu;
+	position: absolute;
+	bottom: 60%;
+	left: 0;
+	pointer-events: none;
+}
+
+.exter__item-link {
+    white-space: nowrap;
+	font-size: 7vw;
+	transition: opacity 0.4s;
+	padding: 0 1vw;
+	font-weight: 900;
+	line-height: 1.15;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
     }
 }
