@@ -2,19 +2,50 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/master3.css">
-    <title>Linno | Externals</title>
+    <link rel="icon" type="image/ico" href="/img/white.ico"/>
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <title>Linno | Interests</title>
 </head>
 <body>
-    <header>
-        <h1>Linno ;; Externals</h1>
-        <p>Some things have NSFW content!</p>
-    </header>
-
-    <div class="wrapper">
-        <div class="container">
-            <!-- header -->
-            <h1></h1>
+    <div class="smooth-scroll-wrapper">
+        <div class="content">
+            <div class="container">
+                <h1 class="text">::Favorite Music</h1>
+                <div class="img">
+                    <img src="../img/img-two.png" width="90%">
+                </div>
+                <p class="text">
+                    I am currently obsessed with Ichika Nito. Help.<br>
+                </p>
+                <div><a href="music.html" class="btn btn-sty">Playlist</a></div>
+            </div>
+            <div class="container">
+                <h1 class="text">::My "Stash"</h1>
+                <div class="img">
+                    <img src="../img/img-one.jpg" width="90%">
+                </div>
+                <p class="text">
+                    *wink*. <span class="warning">! CONTAINS NSFW CONTENT !</span><br>
+                </p>
+                <div><a href="" class="btn btn-sty">List</a></div><br><br><br>
+            </div>
         </div>
     </div>
+    <script>
+        var elements = $(".text, .img").toArray();
+        $(window).scroll(function() {
+            elements.forEach(function(item) {
+                if ($(this).scrollTop() >= $(item).offset().top - 400) {
+                    $(item).addClass("reveal");
+                }
+            });
+        });
+        elements.forEach(function(item) {
+            if ($(this).scrollTop() >= $(item).offset().top - 400) {
+                $(item).addClass("reveal");
+            };
+        });
+    </script>
 </body>
 </html>

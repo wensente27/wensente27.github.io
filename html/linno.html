@@ -4,12 +4,11 @@
     <title>Linno | Home</title>
     <link rel="icon" type="image/ico" href="/img/white.ico"/>
     <link rel="stylesheet" href="../css/master2.css">
-    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../js/main.js">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
 </head>
-<body>
+<body class="smooth-scroll-wrapper">
     <div class="wrapper">
         <div class="container">
             <!-- nav -->
@@ -52,78 +51,37 @@
 
             <!-- about -->
             <section class="about">
-                <div class="about-container">
-                    <p>
+                <div class="about-container reveal">
+                    <p class'>
                         Hi! I'm Linno, but you can call me Vincent or Eli. <br />
-                        I go by any pronouns, and I am Bisexual! <br />
-                        I am based in The Philippines, specifically in Luzon. 
+                        - any pronouns, and I am Bisexual! <br />
+                        - based in The Philippines, specifically in Luzon. 
                     </p>
                     <p>
-                        I have somewhat basic knowledge towards Web Development (HTML, CSS, JS, partial JQuery). I am currently learning Python and I am looking forward to using a Raspberry Pi! <br />
-                        I wouldn't say I'm still ready to do commissions yet, due to me still lacking some knowledge regarding web development, and that's why I'm going for Computer Science!
+                        
                     </p>
-                    <p>I hope we can collaborate in the future! <br><br>discord: nnerd#3325</p>
+                    <p>If you want to know more about me, hit me up with a friend request on Discord:<br>nnerd#3325</p>
                 </div>
             </section>
 
             <div class="whitespace"></div>
 
-            <!-- projects -->
+
+            <!-- externals -->
             <div class="section-header">
                 <div class="section-header-container">
-                    <div class="section-title">projects:</div>
+                    <div class="section-title">ext:</div>
                     <div class="section-order">[02]</div>
                 </div>
             </div>
 
             <div class="divider"></div>
 
-            <section class="project">
-                <div class="project-container">
-                    <div>
-                        <nav class="menu">
-                            <div class="menu__item">
-                                <a href="#" class="menu__item-link">; Soon!</a>
-                                <img src="../img/white.png" class="menu__item-img">
-                                <div class="marquee">
-                                    <div class="marquee__inner">
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                        <span>LINNO</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </section>
-
-            <!-- discord -->
-            <div class="section-header">
-                <div class="section-header-container">
-                    <div class="section-title">ext:</div>
-                    <div class="section-order">[03]</div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
             <section class="server">
-                <div class="server-container">
+                <div class="server-container reveal">
                     <p>
                         <br />
-                            <a href="externals.html" class="exter__item-link exter__item">; Externals</a>
+                            <a href="externals.html" class="exter__item-link exter__item">// Other Things</a>
                     </p>
                     
                 </div>
@@ -133,9 +91,9 @@
 
             <!-- socials -->
             <div class="section-header">
-                <div class="section-header-container">
+                <div class="section-header-container" >
                     <div class="section-title">socials:</div>
-                    <div class="section-order">[04]</div>
+                    <div class="section-order">[03]</div>
                 </div>
             </div>
 
@@ -146,6 +104,7 @@
                     <div class="socials-id tw"><a href="https://twitter.com/linnolmfao" target="_blank">twitter</a></div>
                     <div class="socials-id yt"><a href="https://www.youtube.com/channel/UC9siaJe1g0SS7AS4Rc-rOWg" target="_blank">youtube</a></div>
                     <div class="socials-id ig"><a href="https://www.instagram.com/amoyutotlmao/" target="_blank">instagram</a></div>
+                    <div class="socials-id sp"><a href="https://open.spotify.com/user/6s7egqw2p3cpjni6er2mocpsk" target="_blank">spotify</a></div>
                 </div>
             </section>
 
@@ -163,5 +122,25 @@
             <br />
         </div>
     </div>
+    <script>
+        window.addEventListener('scroll', reveal);
+
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[1].getBoundingClientRect().top;
+        var revealpoint = -450;
+
+        if(revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+        } else {
+            reveals[i].classList.remove('active')
+        }
+    }
+}
+    </script>
 </body>
 </html>
