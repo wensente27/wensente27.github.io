@@ -3,49 +3,59 @@
 <head>
     <link rel="stylesheet" href="../css/master3.css">
     <link rel="icon" type="image/ico" href="/img/white.ico"/>
-    <script src="../js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <title>Linno | Interests</title>
 </head>
 <body>
-    <div class="smooth-scroll-wrapper">
-        <div class="content">
-            <div class="container">
-                <h1 class="text">::Favorite Music</h1>
-                <div class="img">
-                    <img src="../img/img-two.png" width="90%">
-                </div>
-                <p class="text">
-                    I am currently obsessed with Ichika Nito. Help.<br>
-                </p>
-                <div><a href="music.html" class="btn btn-sty">Playlist</a></div>
-            </div>
-            <div class="container">
-                <h1 class="text">::My "Stash"</h1>
-                <div class="img">
-                    <img src="../img/img-one.jpg" width="90%">
-                </div>
-                <p class="text">
-                    *wink*. <span class="warning">! CONTAINS NSFW CONTENT !</span><br>
-                </p>
-                <div><a href="" class="btn btn-sty">List</a></div><br><br><br>
+    <div class="wrapper">
+        <nav class="navBar">
+            <a href="linno.html">
+                <img src="../img/white.png" alt="logo" width="50%">
+            </a>
+            <a href="#">
+                <img src="../img/white.png" alt="menu-btn">
+            </a>
+        </nav>
+
+        <div class="header-container">
+            <p class="site-name">ext:</p>
+            <p class="site-name-2">[01 -> 02]</p>
+        </div>
+        <div class="divider"></div>
+
+        <header>
+            <h1 class="anim">Externals;</h1>
+            <p class="anim">More things that I'm into. this page includes my music playlists, my anime list, all my web development materials, etc. <i>Click on the images to proceed to the desired page.</i></p>
+        </header>
+
+        <div class="work">
+            <a href="epiclist.html"><img src="../img/cover1.png" alt="Stash" class="anim"></a>
+            <a href="music.html"><img src="../img/cover2.png" alt="Music" class="anim"></a>
+            <div class="text-container">
+                <p class="anim text-1">My Anime Stash</p><p class="anim text-2">My Music Shrine</p>
             </div>
         </div>
+
+        <div class="whitespace"></div>
+        <div class="divider"></div>
+
+        <div class="header2">
+            <h1 class="anim">All of my Programming Material;</h1>
+            <p class="anim">Includes the video I watched to learn what I know, maybe you'll get some inspiration too. :)</p>
+        </div>
+
+        <div class="work2">
+            <a href="materials.html"><img src="../img/cover3.png" alt="" class="anim"></a>
+        </div>
+        
+        <div class="whitespace"></div>
+        <div class="divider"></div>
+
+        <footer>
+            <p class="site-name">Linno;</p>
+            <p class="site-name-2">062607 4027</p>
+        </footer>
     </div>
-    <script>
-        var elements = $(".text, .img").toArray();
-        $(window).scroll(function() {
-            elements.forEach(function(item) {
-                if ($(this).scrollTop() >= $(item).offset().top - 400) {
-                    $(item).addClass("reveal");
-                }
-            });
-        });
-        elements.forEach(function(item) {
-            if ($(this).scrollTop() >= $(item).offset().top - 400) {
-                $(item).addClass("reveal");
-            };
-        });
-    </script>
+    <script src="../js/anim.js"></script>
 </body>
 </html>
