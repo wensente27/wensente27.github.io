@@ -1,19 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/master.css">
-    <link rel="icon" type="image/ico" href="/img/white.ico"/>
-    <title>Linno.</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="face">
-            <h1>Linno</h1>
-            <p class="subtitle"><a href="./html/linno.html" class="link">Content</a></p>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Linno</title>
+		<link rel="stylesheet" href="css/styles.css" />
+        <script src="js/clock.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+    <!-- HTML -->
+	<body onload="display_ct();">
+        
+        
+		<div class="site-logo">Linno</div>
+		<div class="navbar">
+			<div class="site-info"><span id="ct"></span></div>
+			<div class="site-menu">
+				<div class="menu-item"><a href="html/about.html" id="no-id">about</a></div>
+				<div class="menu-item"><a href="" id="no-id">projects</a></div>
+			</div>
+		</div>
+		<div class="showreel"><a href="" id="no-id">! view current project !</a></div>
+		<div class="container">
+			<div class="wrapper-img">
+				<div class="box"></div>
+				<div>
+					<a href="https://github.com/wensente27"><img class="image" src="img/hero.png" /></a>
+                    <p class="source-txt">Image art by <a id="no-id" href="https://twitter.com/umeboshimaro/status/1288054088559554560">@umeboshimaro</a></p>
+				</div>
+			</div>
+			<div class="circle-shape"></div>
+			<div class="circle-shape-2"></div>
+			<div class="circle-shape-3"></div>
+			<div class="blocks">
+				<div class="block-1 block">N</div>
+				<div class="block-2 block">N</div>
+				<div class="block-3 block">O</div>
+				<div class="block-4 block">U</div>
+			</div>
+		</div>
+        <script>
+            $(document).ready(function () {
+                setTimeout(function () {
+
+                    $('a[href]#no-id').each(function () {
+                            var href = this.href;
+
+                            $(this).removeAttr('href').css('cursor', 'pointer').click(function () {
+                                if (href.toLowerCase().indexOf("#") >= 0) {
+
+                            } else {
+                                window.open(href, '_self');
+                            }
+                        });
+                    });
+
+                }, 500);
+            });
+        </script>
+		<script>
+			TweenMax.to(".block-1", 2, {
+				x: "-180",
+				y: "-100",
+				scale: "2.4",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-2", 2, {
+				x: "-180",
+				y: "200",
+				scale: "1.2",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-3", 2, {
+				x: "180",
+				y: "-240",
+				scale: "1.6",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-4", 2, {
+				x: "250",
+				y: "190",
+				scale: "1",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".box", 2.4, {
+				y: "-100%",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.from(".circle-shape", 2.4, {
+				scale: "0",
+				ease: Expo.easeInOut,
+			});
+			TweenMax.from(".circle-shape-2", 2.4, {
+				scale: "0",
+				ease: Expo.easeInOut,
+			});
+			TweenMax.from(".circle-shape-3", 2.4, {
+				scale: "0",
+				ease: Expo.easeInOut,
+			});
+			TweenMax.from(".navbar > div", 1.6, {
+				opacity: 0,
+				y: 60,
+				ease: Expo.easeInOut,
+				delay: 0.6,
+			});
+			TweenMax.from(".site-logo", 1.6, {
+				opacity: 0,
+				y: 40,
+				ease: Expo.easeInOut,
+				delay: 0.6,
+			});
+			TweenMax.from(".showreel", 1.6, {
+				opacity: 0,
+				y: 40,
+				ease: Expo.easeInOut,
+				delay: 0.6,
+			});
+			TweenMax.staggerFrom(
+				".site-menu > div",
+				1,
+				{
+					opacity: 0,
+					y: 60,
+					ease: Power2.easeOut,
+				},
+				0.2
+			);
+		</script>
+	</body>
 </html>
