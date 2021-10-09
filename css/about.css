@@ -7,6 +7,23 @@
 
 }
 
+@font-face {
+    font-family: 'Stretch Sans';
+    src: url('fonts/strretch_sans-webfont.woff2') format('woff2'),
+         url('fonts/strretch_sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument';
+    src: url('fonts/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/monumentextended-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html, body {
     margin: 0;
     padding: 0;
