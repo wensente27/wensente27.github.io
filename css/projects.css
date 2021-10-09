@@ -35,7 +35,7 @@ html, body {
 }
 
 ::selection {
-    background: #A8C0D8;
+    background: #765898;
     color: white;
 }
 
@@ -229,7 +229,7 @@ p {
     transition: 0.5s;
 }
 #no-id:hover {
-    color: lightblue;
+    color: #AF8FD3;
 }
 
 .image {
@@ -289,4 +289,9 @@ h1 {
     color: transparent !important;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+}
+.link:hover {
+    color: transparent !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #D4B6F6;
 }
