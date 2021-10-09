@@ -74,6 +74,7 @@ nav #brand {
 nav #brand a {
     color: #fff;
     transition: all 0.3s ease-out;
+    cursor: default !important;
 }
 
 nav #brand a:hover {
@@ -244,8 +245,7 @@ nav #menu li a:hover {
     color: #fff;
     font-size: 18px;
     padding-left: 20px;
-}
-
+}   
 
 #ig::before {
     display: inline-block;
