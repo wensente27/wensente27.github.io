@@ -21,8 +21,6 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="cursor"></div>
-        <div class="cursor-follow"></div>
         <nav>
               <span id="brand">
                     <a id="no-id" href="../index.html">Linno</a>
@@ -152,63 +150,6 @@
                     });
 
                 }, 500);
-            });
-      </script>
-      <script src="/js/index.js"></script>
-      <script>
-          var blocks = document.getElementsByClassName('block');
-          var container = document.getElementsByClassName('horizontal-scr');
-          var hs = new HorizontalScroll.default({
-              blocks : blocks,
-              container: container,
-              isAnimated: true,
-              springEffect: 0.8,
-          });
-      </script>
-      <script>
-          var cursor = $(".cursor"),
-                follower = $(".cursor-follower");
-
-            var posX = 0,
-                posY = 0,
-                mouseX = 0,
-                mouseY = 0;
-
-            TweenMax.to({}, 0.016, {
-                repeat: -1,
-                onRepeat: function() {
-                    posX += (mouseX - posX) / 9;
-                    posY += (mouseY - posY) / 9;
-
-                    TweenMax.set(follower, {
-                        css: {
-                            left: posX - 20,
-                            top: posY - 20
-                        }
-                    });
-
-                    TweenMax.set(cursor, {
-                        css: {
-                            left: mouseX,
-                            top: mouseY
-                        }
-                    });
-                }
-            });
-
-            $(document).on("mousemove", function(e) {
-                mouseX = e.pageX;
-                mouseY = e.pageY;
-            });
-
-            $(".block").on("mouseenter", function() {
-                cursor.addClass("active");
-                follower.addClass("active");
-            });
-
-            $(".block").on("mouseleave", function() {
-                cursor.removeClass("active");
-                follower.removeClass("active");
             });
       </script>
 </body>
