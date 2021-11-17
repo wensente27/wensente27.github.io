@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/fade7e2418.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="/src/main.css">
     <link rel="icon" href="/src/assets/white.ico">
     <title>Linno</title>
@@ -17,11 +18,11 @@
             <div class="brand"><a href="https://wensente27.github.io">Linno</a></div>
         </div>
         <div class="hero-img">
-            <a href="https://wensente27.github.io"><img src="/src/assets/original.jpg" alt="Lol"></a>
+            <a href="https://wensente27.github.iod"><img src="/src/assets/original.jpg" alt="Lol"></a>
             <div class="hero-txt">code dumps / gaming / music</div>
         </div>
-        <div class="socials">
-            <ul class="social-links">
+        <div id="socials" class="socials">
+            <ul class="social-links isParent">
                 <li><a href="https://www.youtube.com/channel/UC9siaJe1g0SS7AS4Rc-rOWg"><ion-icon name="logo-youtube"></ion-icon></a></li>
                 <li><a href="https://www.twitter.com/linnolmfao"><ion-icon name="logo-twitter"></ion-icon></a></li>
                 <li><a href="https://www.instagram.com/linnolmfao"><ion-icon name="logo-instagram"></ion-icon></a></li>
@@ -30,6 +31,14 @@
             </ul>
         </div>
     </div>
-
+    <script>
+        $("#socials ul li").hover(function() { // Mouse over
+            $(this).siblings().stop().fadeTo(300, 0.6);
+            $(this).parent().siblings().stop().fadeTo(300, 0.3); 
+        }, function() { // Mouse out
+            $(this).siblings().stop().fadeTo(300, 1);
+            $(this).parent().siblings().stop().fadeTo(300, 1);
+        });
+    </script>
 </body>
 </html>
