@@ -1,0 +1,12 @@
+@use 'colors';
+@use 'fonts';
+
+html, body {
+    background: colors.$bg-color;
+    font-family: fonts.$robot-mono;
+    color: colors.$white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Monument';
+    src: url('/src/assets/fonts/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('/src/assets/fonts/monumentextended-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Phonk';
+    src: url('/src/assets/fonts/phonk_regular_demo-webfont.woff2') format('woff2'),
+         url('/src/assets/fonts/phonk_regular_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Stretch Sans';
+    src: url('/src/assets/fonts/strretch_sans-webfont.woff2') format('woff2'),
+         url('/src/assets/fonts/strretch_sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+// Custom Fonts
+$monument: 'Monument', monospace;
+$phonk: 'Phonk', Arial;
+$stretch-sans: 'Stretch Sans', sans-serif;
+$robot-mono: 'Roboto Mono', monospace;
+$display: 'Special Elite', cursive;

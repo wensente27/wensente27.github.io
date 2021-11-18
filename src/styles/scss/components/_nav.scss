@@ -1,0 +1,58 @@
+@use 'abstracts/colors';
+@use 'abstracts/fonts';
+@use 'abstracts/typography';
+
+nav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    font-size: typography.$small;
+
+    .brand {
+      font-family: fonts.$monument;
+      font-size: typography.$brand-size;
+      float: left;
+      display: block;
+      margin-left: 82px;
+      line-height: 110px;
+      font-weight: bold;
+    }
+
+    .brand a {
+      color: colors.$white;
+      transition: all 0.3s ease-out;
+      background: url(/src/assets/img/bg.gif);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+}
+
+.nav-links {
+    letter-spacing: typography.$spacing;
+    float: left;
+    right: 80px;
+    position: fixed;
+
+    li {
+      padding-left: 40px;
+      display: inline-block;
+      cursor: pointer;
+      font-weight: 300;
+      line-height: 80px;
+      position: relative;
+      transition: all 0.3s ease-out;
+    }
+    
+    a {
+        color: colors.$white;
+        text-decoration: none;
+        transition: all 0.3s ease-out;
+    }
+
+    a:hover {
+        color: colors.$light-blue;
+    }
+
+}
+

@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/src/assets/img/logowhite.png">
-    <link rel="stylesheet" href="/src/styles/scss/main.scss">
+    <link rel="icon" href="/logowhite.08499ba1.png">
+    <link rel="stylesheet" href="/main.5a6cc634.css">
 
     <!-- CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 
     <title>Lin // Home</title>
-</head>
+<script src="/main.5a6cc634.js"></script></head>
 <body>
     <div class="container">
         <div class="nav-container">
             <nav>
-                <span class="brand"><a href="index.html">Linno.</a></span>
+                <span class="brand"><a href="/index.html">Linno.</a></span>
                 <div class="nav">
                     <ul class="nav-links">
                         <li><a href="#">home</a></li>
@@ -36,22 +36,21 @@
             </div>
         </div>
     </div>
-    <script>
-        $(".nav ul li").hover(function() { // Mouse over
-            $(this).siblings().stop().fadeTo(300, 0.3);
-            $(this).parent().siblings().stop().fadeTo(300, 0.3); 
-        }, function() { // Mouse out
-            $(this).siblings().stop().fadeTo(300, 1);
-            $(this).parent().siblings().stop().fadeTo(300, 1);
-        });
-
-        const text = baffle(".baffle-data");
-        text.set({
-                characters : '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
-                speed: 190
-        });
-        text.start();
-        text.reveal(4000);
-    </script>
+    <script>$(".nav ul li").hover(function () {
+  // Mouse over
+  $(this).siblings().stop().fadeTo(300, 0.3);
+  $(this).parent().siblings().stop().fadeTo(300, 0.3);
+}, function () {
+  // Mouse out
+  $(this).siblings().stop().fadeTo(300, 1);
+  $(this).parent().siblings().stop().fadeTo(300, 1);
+});
+var text = baffle(".baffle-data");
+text.set({
+  characters: '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
+  speed: 190
+});
+text.start();
+text.reveal(4000);</script>
 </body>
 </html>

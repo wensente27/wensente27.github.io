@@ -1,0 +1,12 @@
+@use 'abstracts/colors';
+@use 'abstracts/fonts';
+@use 'abstracts/typography';
+
+.footer {
+    color: colors.$white;
+    float: left;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    position: absolute;
+    bottom: 0;
+}

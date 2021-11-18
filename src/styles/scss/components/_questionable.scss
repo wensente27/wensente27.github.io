@@ -1,0 +1,20 @@
+@use 'abstracts/colors';
+@use 'abstracts/fonts';
+@use 'abstracts/typography';
+
+.questionable {
+    text-align: center;
+    line-height: 520px;
+    font-size: typography.$normal;
+    font-family: fonts.$display;
+
+    .qstnbl__text-inner {
+        padding: 10px; 
+        background: colors.$ligther-black;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
