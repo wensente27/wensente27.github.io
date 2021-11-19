@@ -1,6 +1,11 @@
 @use 'colors';
 @use 'fonts';
 
+::selection {
+    color: #000;
+    background: #fff;
+}
+
 html, body {
     background: colors.$bg-color;
     font-family: fonts.$robot-mono;

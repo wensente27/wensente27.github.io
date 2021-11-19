@@ -1,0 +1,12 @@
+@use 'abstracts/colors';
+@use 'abstracts/fonts';
+@use 'abstracts/typography';
+
+.decor {
+    color: colors.$dark-blue;
+}
+
+.emphasis {
+    font-weight: 700;
+    font-size: typography.$normal;
+}

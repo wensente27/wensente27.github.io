@@ -24,7 +24,7 @@
   },
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html jetaimetrop.html me.html portfolio.html"
   },
   "repository": {
     "type": "git",

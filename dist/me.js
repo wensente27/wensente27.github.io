@@ -184,12 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/styles/scss/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"C:\\Users\\ADMIN\\Desktop\\wensente27.github.io\\src\\assets\\fonts\\monumentextended-regular-webfont.woff2":[["monumentextended-regular-webfont.c80a20ae.woff2","src/assets/fonts/monumentextended-regular-webfont.woff2"],"src/assets/fonts/monumentextended-regular-webfont.woff2"],"C:\\Users\\ADMIN\\Desktop\\wensente27.github.io\\src\\assets\\fonts\\monumentextended-regular-webfont.woff":[["monumentextended-regular-webfont.75990fab.woff","src/assets/fonts/monumentextended-regular-webfont.woff"],"src/assets/fonts/monumentextended-regular-webfont.woff"],"C:\\Users\\ADMIN\\Desktop\\wensente27.github.io\\src\\assets\\fonts\\phonk_regular_demo-webfont.woff2":[["phonk_regular_demo-webfont.507e0e18.woff2","src/assets/fonts/phonk_regular_demo-webfont.woff2"],"src/assets/fonts/phonk_regular_demo-webfont.woff2"],"C:\\Users\\ADMIN\\Desktop\\wensente27.github.io\\src\\assets\\fonts\\phonk_regular_demo-webfont.woff":[["phonk_regular_demo-webfont.66db626c.woff","src/assets/fonts/phonk_regular_demo-webfont.woff"],"src/assets/fonts/phonk_regular_demo-webfont.woff"],"C:\\Users\\ADMIN\\Desktop\\wensente27.github.io\\src\\assets\\fonts\\strretch_sans-webfont.woff2":[["strretch_sans-webfont.b63546a1.woff2","src/assets/fonts/strretch_sans-webfont.woff2"],"src/assets/fonts/strretch_sans-webfont.woff2"],"C:\\Users\\ADMIN\\Desktop\\wensente27.github.io\\src\\assets\\fonts\\strretch_sans-webfont.woff":[["strretch_sans-webfont.f5665d1d.woff","src/assets/fonts/strretch_sans-webfont.woff"],"src/assets/fonts/strretch_sans-webfont.woff"],"C:\\Users\\ADMIN\\Desktop\\wensente27.github.io\\src\\assets\\img\\qstnbl__bg.gif":[["qstnbl__bg.082956e4.gif","src/assets/img/qstnbl__bg.gif"],"src/assets/img/qstnbl__bg.gif"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65443" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57773" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -394,4 +389,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/main.5a6cc634.js.map
+//# sourceMappingURL=/me.js.map

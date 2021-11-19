@@ -1,0 +1,36 @@
+@use 'abstracts/colors';
+@use 'abstracts/typography';
+@use 'components/decor';
+
+.content {
+    color: #fff;
+    text-align: left;
+    font-family: monospace;
+    margin-top: 35px;
+    margin-left: 90px;
+    width: 70%;
+
+    h2 {
+        font-size: typography.$normal;
+        font-family: monospace;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+.social__link a {
+    font-size: 1.4em;
+    color: colors.$dark-blue;
+}
+
+.social__link a:hover {
+    text-decoration: none;
+}
+
+.credits a:hover {
+    text-decoration: none;
+}
+
+
