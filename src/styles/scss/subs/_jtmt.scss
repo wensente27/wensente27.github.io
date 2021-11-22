@@ -1,0 +1,78 @@
+@use 'abstracts/base';
+@use 'abstracts/colors';
+@use 'abstracts/fonts';
+@use 'abstracts/typography';
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    text-align: center;
+}
+
+.page--background {
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+    position: absolute;
+    background: url(/src/assets/img/scenery.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%) blur(2px);
+    z-index: -1;
+}
+
+.word-rotate {
+    text-align: center;
+    line-height: 40vh;
+    font-family: fonts.$montserrat;
+    font-size: typography.$normal + 1.5;
+}
+
+.card {
+    height: 200px;
+    width: 600px;
+    display: flex;
+    border-radius: 5px;
+    margin-left: 27rem;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url(/src/assets/img/card-bg.jpg);
+    width: 37%;
+    border-radius: 5%;
+}
+
+.card img {
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 0 10px 1px #0007;
+}
+
+.card .card--content {
+    color: colors.$white;
+
+    h1 {
+        margin-left: 17px;
+        margin-top: 40px;
+    }
+
+    p {
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-family: fonts.$montserrat;
+    }
+}
+
+i {
+    font-size: 30px;
+    color: colors.$white;
+    transition: 0.5s ease-out;
+}
+
+i:hover {
+    color: colors.$mint-green;
+}

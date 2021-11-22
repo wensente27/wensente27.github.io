@@ -6,49 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/logowhite.08499ba1.png">
     <link rel="stylesheet" href="/main.5a6cc634.css">
+    <title>Mahal mo din ba ako?</title>
 
     <!-- CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title></title>
+    <script src="https://kit.fontawesome.com/fade7e2418.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="nav-container">
-            <nav>
-                <span class="brand"><a href="/index.html">Linno.</a></span>
-                <div class="nav">
-                    <ul class="nav-links">
-                        <li><a href="#" class="active">home</a></li>
-                        <li><a href="/me.html">lin</a></li>
-                        <li><a href="">lswd</a></li>
-                    </ul>
+    <div class="wrapper">
+        <div class="page--background"></div>
+        <h1>"<span class="word-rotate">Je t'aime beaucoup</span>."</h1>
+        <div class="card--wrapper">
+            <div class="card">
+                <div class="image">
+                    <a href="https://open.spotify.com/track/0zANeX4R6uWb82gCQAguOD?si=db1abb1008474bff">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27349a06e2e7a98944b8d70a4e1">
+                    </a>
                 </div>
-            </nav>
-        </div>
-        <div class="questionable">
-            <div class="qstnbl__text"><a href="/jetaimetrop.html" data-title="You're what's on my mind most of the time" class=""><span class="qstnbl__text-inner baffle-data">01/19/21</span></a></div>
-        </div>
-        <div class="footer">
-            <div class="cpyr--branding">
-                <span>♡ wensente27</span>
+                <div class="card--content">
+                    <h1>Habang Buhay</h1>
+                    <p>Zack Tabudlo</p>
+                    <a href="https://open.spotify.com/track/0zANeX4R6uWb82gCQAguOD?si=db1abb1008474bff" aria-hidden="true"><i class="fab fa-spotify"></i></a>
+                </div>
             </div>
         </div>
+        <p></p>
     </div>
-    <script>$(".nav ul li").hover(function () {
-  // Mouse over
-  $(this).siblings().stop().fadeTo(300, 0.3);
-  $(this).parent().siblings().stop().fadeTo(300, 0.3);
-}, function () {
-  // Mouse out
-  $(this).siblings().stop().fadeTo(300, 1);
-  $(this).parent().siblings().stop().fadeTo(300, 1);
-});
-var text = baffle(".baffle-data");
-text.set({
-  characters: '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
-  speed: 190
-});
-text.start();
-text.reveal(4000);</script>
+    <!-- JQuery -->
+    <script>// Text change
+(function () {
+  var words = ['Je t\'aime beaucoup', 'Mahal na mahal kita', 'あなたをとても愛しています', 'Ti amo tanto', 'Eu te amo tanto', '我真的很爱你', 'Te amo demasiado', 'Aku sangat mencintaimu', '당신을 정말 사랑해요'];
+  i = 0;
+  setInterval(function () {
+    $('.word-rotate').fadeOut(function () {
+      $(this).html(words[i = (i + 1) % words.length]).fadeIn();
+    });
+  }, 3000);
+})(); // Mousemove
+
+
+var windowWidth = $(window).width();
+$('.wrapper').mousemove(function (event) {
+  var moveX = ($(window).width() / 2 - event.pageX) * 0.1;
+  var moveY = ($(window).width() / 2 - event.pageY) * 0.1;
+  $('.page--background').css('margin-left', moveX + 'px');
+  $('.page--background').css('margin-top', moveY + 'px');
+});</script>
 </body>
 </html>
